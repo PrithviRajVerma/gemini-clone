@@ -21,7 +21,7 @@
     margin: auto;
 }
 .main .greet{
-    margin: 50px 0px;
+    margin: 28px 0px;
     font-weight: 500;
     font-size: 56px;
     color: #c4c7c5;
@@ -36,8 +36,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     gap: 15px;
-    padding: 20px;
-}
+    padding: 20px;}
 .main .card{
     height:200px;
     padding: 15px;
@@ -62,4 +61,44 @@
 .main .card:hover{
     background-color: #dfe4ea;
 
+}
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 18px;
+}
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.main .bottom-info{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    margin: 15px auto;
 }
