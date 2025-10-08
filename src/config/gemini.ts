@@ -1,7 +1,5 @@
 
-import {
-  GoogleGenAI,
-} from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 
 async function runchat(prompt: string) {
   const ai = new GoogleGenAI({
@@ -36,9 +34,13 @@ async function runchat(prompt: string) {
     config,
     contents,
   });
-  for await (const chunk of response) {
-    console.log(chunk.text);
+
+  let fullText: string = "";
+  for await (const chunk of response) { // response comes in form of chunks which can be stiched
+    fullText += chunk.text;
   }
+  console.log(fullText);
+  return fullText;
 }
 
 export default runchat;
