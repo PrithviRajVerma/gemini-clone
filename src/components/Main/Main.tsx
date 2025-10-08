@@ -8,8 +8,6 @@ const Main = () => {
 
     const {input,setInput,prevsPrompts,setPrevsPrompts,resultData,setResultData,loading,setLoading,showResult,setShowResult,recentPrompt,setRecentPrompt,onSent,} = useContext(Context);
 
-
-
     return(
         <div className="main">
             <div className="nav">

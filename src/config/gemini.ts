@@ -3,7 +3,7 @@ import { GoogleGenAI } from '@google/genai';
 
 async function runchat(prompt: string) {
   const ai = new GoogleGenAI({
-    apiKey: "AIzaSyBsFch3Ci85x6bC-lnCqaHDx_zYGdlBrzM",
+    apiKey: "",
   });
   const tools = [
     {
