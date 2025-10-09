@@ -1,3 +1,6 @@
+# Gemini-apiKey :
+Just put the gemini-apiKey in the gemini.ts file and you are good to go.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
